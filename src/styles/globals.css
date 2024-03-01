@@ -2,32 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0%;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@font-face {
+  font-family: 'LightFont';
+  src: url('/fonts/Mont\ Font\ Family/MontExtraLight.otf') format('opentype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'HeavyFont';
+  src: url('/fonts/Mont\ Font\ Family/MontHeavy.otf') format('opentype');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mont {
+  font-family: 'LightFont';
+}
+.mont-heavy{
+  font-family:'HeavyFont'
 }

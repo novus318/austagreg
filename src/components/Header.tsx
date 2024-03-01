@@ -45,9 +45,9 @@ import { motion, useAnimation } from 'framer-motion';
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className={`flex mont-heavy items-center justify-between px-4 py-2 ${
+        className={`flex mont-heavy items-center justify-between fixed w-full z-20 px-4 py-2 ${
           scrolled ? 'bg-white shadow-md' : 'bg-transparent'
-        } ${isMenuOpen ? 'bg-white' : ''}`}
+        } `}
       >
     <Link href='/'>
     <img src="/images/logo.svg" alt="Logo" className="ml-4 w-auto h-12 md:h-16 lg:h-20" /></Link>
@@ -99,13 +99,13 @@ import { motion, useAnimation } from 'framer-motion';
         </ul>
     </nav>
     </motion.header>
-{isMenuOpen && (
-      <motion.div
-      initial={{ opacity: 0, x: "-100%" }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: "-100%" }}
-      className="lg:hidden bg-white flex flex-col mont-heavy tracking-widest text-left px-4"
-    >
+    {isMenuOpen && (
+     <motion.div
+     initial={{ opacity: 0, y: "-100%" }}
+     animate={{ opacity: 1, y: 0 }}
+     exit={{ opacity: 0, y: "-100%" }}
+     className="lg:hidden mont-heavy tracking-widest text-left p-4 fixed w-full top-12 bg-white"
+   >
       <motion.div
         variants={{
           hidden: { opacity: 0, x: -20 },

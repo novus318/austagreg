@@ -21,10 +21,16 @@
   src: url('/fonts/Mont\ Font\ Family/MontHeavy.otf') format('opentype');
 }
 
-
+.decor{
+  width: 100%;
+}
 .mont {
   font-family: 'LightFont';
 }
 .mont-heavy{
   font-family:'HeavyFont'
+}
+.hallow {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7ED957;
 }

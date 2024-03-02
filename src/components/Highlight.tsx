@@ -90,7 +90,7 @@ const Highlight = () => {
 
   return (
     <div className="flex justify-center items-center p-4">
-      <div className="max-w-6xl w-full bg-[#dcffcd2d] rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <div className="max-w-6xl w-full bg-[#dcffcd2d] rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-8" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <h2 className="text-4xl font-bold mont-heavy text-[#004AAD] title">Mobile Responsive</h2>
           <p className="mt-4 text-base mont font-normal text-black description">

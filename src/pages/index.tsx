@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import Layout from "@/components/Layout";
+import Solutions from "@/components/Solutions";
 import Vision from "@/components/Vision";
 
 
@@ -20,6 +21,7 @@ export default function Home() {
    <Hero/>
    <Vision/>
    <Highlight/>
+   <Solutions/>
    </Layout>
    </>
   );

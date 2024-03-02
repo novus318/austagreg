@@ -94,7 +94,7 @@ const Highlight = () => {
         <div className="w-full md:w-1/2 p-8" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <h2 className="text-4xl font-bold mont-heavy text-[#004AAD] title">Mobile Responsive</h2>
           <p className="mt-4 text-base mont font-normal text-black description">
-            In today's digital landscape, mobile responsiveness is crucial. We prioritize creating websites and applications that seamlessly adapt to various devices. Our design and development ensure an optimal user experience, regardless of whether your audience is on a desktop, tablet, or smartphone. Embrace the future with mobile-responsive solutions that cater to the diverse ways users engage with your content.
+            In todays digital landscape, mobile responsiveness is crucial. We prioritize creating websites and applications that seamlessly adapt to various devices. Our design and development ensure an optimal user experience, regardless of whether your audience is on a desktop, tablet, or smartphone. Embrace the future with mobile-responsive solutions that cater to the diverse ways users engage with your content.
           </p>
         </div>
 

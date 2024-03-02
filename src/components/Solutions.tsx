@@ -36,7 +36,7 @@ const Solutions = () => {
         gsap.from('.feature-icon1', {
           opacity: 0,
           y: 50,
-          duration: 1,
+          duration: 0.5,
           stagger: 0.2,
           scrollTrigger: {
             trigger: '.feature-icon1',
@@ -96,7 +96,7 @@ const Solutions = () => {
               Empower your business with Web 3 technologies. We deliver innovative web solutions that leverage the latest advancements in decentralized systems, blockchain, and smart contracts.
             </p>
           </div>
-          <div className="p-2 md:p-4 bg-[#004AAD] text-white">
+          <div className="p-2 md:p-4 bg-[#004AAD] text-white rounded-md">
             <h2 className="text-md md:text-lg font-semibold mont-heavy explore-collections1 tracking-wide">Web Solutions in Web 3</h2>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Solutions = () => {
               
             Identify and mitigate potential security risks in your systems. Our comprehensive vulnerability assessment and testing services help you fortify your digital assets and protect against cyber threats.</p>
           </div>
-          <div className="p-2 md:p-4 bg-[#004AAD] text-white">
+          <div className="p-2 md:p-4 bg-[#004AAD] text-white rounded-md">
             <h2 className="text-md md:text-lg font-semibold mont-heavy explore-collections1 tracking-wide">Vulnerability Assessment & Testing</h2>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Solutions = () => {
             Enhance operational efficiency with our thorough process audits. We analyze and optimize your business processes, ensuring compliance, reducing bottlenecks, and maximizing productivity.
             </p>
           </div>
-          <div className="p-2 md:p-4 bg-[#004AAD] text-white">
+          <div className="p-2 md:p-4 bg-[#004AAD] text-white rounded-md">
             <h2 className="text-md md:text-lg font-semibold mont-heavy explore-collections1 tracking-wide">Process Audits</h2>
           </div>
         </div>
@@ -159,7 +159,7 @@ const Solutions = () => {
       Our expertise lies in providing innovative, robust licensing solutions in Web 3 that harness the power of decentralized technologies, blockchain, and smart contracts.
       </p>
     </div>
-    <div className="p-2 md:p-4 bg-[#004AAD] text-white">
+    <div className="p-2 md:p-4 bg-[#004AAD] text-white rounded-md">
       <h2 className="text-md md:text-lg font-semibold mont-heavy explore-collections1 tracking-wide">Licensing Solutions in Web 3</h2>
     </div>
   </div>

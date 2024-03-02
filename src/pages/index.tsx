@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Highlight from "@/components/Highlight";
 import Layout from "@/components/Layout";
 import Vision from "@/components/Vision";
 
@@ -18,6 +19,7 @@ export default function Home() {
    <Header/>
    <Hero/>
    <Vision/>
+   <Highlight/>
    </Layout>
    </>
   );

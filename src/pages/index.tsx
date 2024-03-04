@@ -4,6 +4,7 @@ import Highlight from "@/components/Highlight";
 import Layout from "@/components/Layout";
 import Solutions from "@/components/Solutions";
 import Vision from "@/components/Vision";
+import WhyUs from "@/components/WhyUs";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
    <Vision/>
    <Highlight/>
    <Solutions/>
+   <WhyUs/>
    </Layout>
    </>
   );

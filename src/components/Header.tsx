@@ -53,6 +53,7 @@ import { motion, useAnimation } from 'framer-motion';
     <img src="/images/logo.svg" alt="Logo" className="ml-4 w-auto h-12 md:h-16 lg:h-20" /></Link>
     <div className="block lg:hidden">
           <motion.button
+          name='toggleMenu'
             onClick={handleToggleMenu}
             className="text-[#004AAD] focus:outline-none transition-all duration-300 ease-in-out"
             whileHover={{ scale: 1.1 }}

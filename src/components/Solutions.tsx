@@ -11,7 +11,7 @@ const Solutions = () => {
     useEffect(() => {
         gsap.from('.title1', {
           opacity: 0,
-          y: 100,
+          x: -80,
           duration: 1,
           scrollTrigger: {
             trigger: '.title1',

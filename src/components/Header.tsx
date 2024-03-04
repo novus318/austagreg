@@ -105,7 +105,7 @@ import { motion, useAnimation } from 'framer-motion';
      initial={{ opacity: 0, y: "-100%" }}
      animate={{ opacity: 1, y: 0 }}
      exit={{ opacity: 0, y: "-100%" }}
-     className="lg:hidden mont-heavy tracking-widest text-left p-4 fixed w-full top-14 bg-white"
+     className="lg:hidden mont-heavy tracking-widest text-left p-4 fixed w-full top-14 bg-white z-50"
    >
       <motion.div
         variants={{

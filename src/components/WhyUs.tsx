@@ -73,7 +73,7 @@ const WhyUs = () => {
         <GrUserExpert className="text-[#004AAD] h-10 w-10 md:h-16 md:w-16 mr-4 feature-icon2" />
         <div className='description2'>
           <span className="text-[#004AAD] font-semibold">Expertise</span>
-          <p className='text-xs'>Benefit from our team's deep expertise in web development, design, and the latest Web 3 technologies. We bring a wealth of experience to every project.</p>
+          <p className='text-xs'>Benefit from our team with deep expertise in web development, design, and the latest Web 3 technologies. We bring a wealth of experience to every project.</p>
         </div>
       </div>
       <div className="flex items-center p-4 border-2 border-[#DCFCCD] rounded-lg explore-collections2">

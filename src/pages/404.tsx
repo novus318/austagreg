@@ -18,8 +18,8 @@ const CustomPage = () => {
         <div key="1" className="flex h-screen w-full flex-col items-center justify-center">
             <div className="text-center">
                 <h1 className="mt-4 text-6xl font-bold mont-heavy text-[#004AAD]">Hide & Seek Time!</h1>
-                <p className="mt-4 text-xl">And you're it!</p>
-                <p className="text-xl">(Sorry, we can't find the page, too.)</p>
+                <p className="mt-4 text-xl">And you are it!</p>
+                <p className="text-xl">(Sorry, we cannot find the page, too.)</p>
             </div>
             <div className="mt-10 flex max-w-xs flex-col items-center overflow-hidden">
                 <p className="text-lg text-[#004AAD]">Redirecting...</p>

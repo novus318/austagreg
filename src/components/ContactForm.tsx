@@ -9,8 +9,8 @@ export function ContactForm() {
     console.log("Form submitted");
   };
 return (
- <div className="flex justify-center items-center h-screen">
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-[#DCFFCD] bg-opacity-20 text-black">
+ <div className="flex justify-center items-center h-screen ">
+    <div className="max-w-md w-full rounded-lg md:rounded-2xl p-4 md:p-8 shadow-input bg-[#DCFFCD] bg-opacity-20 text-black mx-3">
        <h2 className="font-bold text-xl text-[#004AAD] ">
           Welcome to Austagreg
        </h2>

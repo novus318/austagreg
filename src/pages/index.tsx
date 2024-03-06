@@ -2,10 +2,12 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
+import { JoinUs } from "@/components/JoinUs";
 import Layout from "@/components/Layout";
 import Solutions from "@/components/Solutions";
 import Vision from "@/components/Vision";
 import WhyUs from "@/components/WhyUs";
+
 
 
 export default function Home() {
@@ -25,6 +27,7 @@ export default function Home() {
    <Highlight/>
    <Solutions/>
    <WhyUs/>
+   <JoinUs/>
    <Footer/>
    </Layout>
    </>

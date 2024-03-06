@@ -1,3 +1,4 @@
+import { ContactForm } from '@/components/ContactForm'
 import Header from '@/components/Header'
 import Layout from '@/components/Layout'
 import React from 'react'
@@ -14,6 +15,7 @@ const Contact = () => {
     canonicalUrl="https://www.austagreg.com/services"
     >
    <Header/>
+   <ContactForm/>
    </Layout>
    </>
   )

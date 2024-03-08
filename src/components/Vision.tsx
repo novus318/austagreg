@@ -15,7 +15,7 @@ const Vision = () => {
       await listAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
     };
 
-    animateOnLoad();
+    setTimeout(animateOnLoad, 800);
   }, [containerAnimation, imageAnimation, textAnimation, listAnimation]);
 
   return (

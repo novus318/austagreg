@@ -48,7 +48,7 @@ const SolutionCard = () => {
       },
       {
         "name": "Process Audit Solutions",
-        "description": "Streamline your processes with our in-depth process audit solutions.",
+        "description": "Our services include workflow analysis, efficiency recommendations, and compliance checks.",
         "keyFeatures": [
           "Workflow Analysis",
           "Efficiency Recommendations",

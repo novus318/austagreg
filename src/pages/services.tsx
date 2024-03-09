@@ -3,6 +3,8 @@ import Header from '@/components/Header'
 import { JoinUs } from '@/components/JoinUs'
 import Layout from '@/components/Layout'
 import ServiSection from '@/components/ServiSection'
+import Vulnerablity from '@/components/Vulnerablity'
+import WebDev from '@/components/WebDev'
 import React from 'react'
 
 const Services = () => {
@@ -19,6 +21,8 @@ const Services = () => {
    <Header/>
    <ServiSection/>
    <JoinUs/>
+   <WebDev/>
+   <Vulnerablity/>
    <Footer/>
    </Layout>
    </>

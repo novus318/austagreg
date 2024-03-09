@@ -17,11 +17,12 @@ const Contact = () => {
       >
         <Header/>
         <ContactForm/>
-        <div style={{ padding: '10px', borderRadius: '5px', margin: '10px 0' }}>
-          <p style={{ fontWeight: 'bold', fontSize: '16px' }}>AUSTAGREG HQ</p>
-          <p style={{ fontSize: '14px' }}>201, Apex@Henderson</p>
-          <p style={{ fontSize: '14px' }}>Singapore 159545</p>
-        </div>
+        <div className="p-4 rounded-lg m-4 transform hover:scale-105 transition-transform duration-300">
+  <p className="font-bold text-lg">AUSTAGREG HQ</p>
+  <p className="text-base">201, Apex@Henderson</p>
+  <p className="text-base">Singapore 159545</p>
+</div>
+
         <Footer/>
       </Layout>
     </>

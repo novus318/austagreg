@@ -1,8 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Input, TextArea } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
 import emailjs from 'emailjs-com';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 export function ContactForm() {
   const SERVICE_ID_EMAIL = 'service_02uh5z3';
   const EMAILJS_TEMPLATE_ID = 'template_pkulcpq';
@@ -62,11 +67,69 @@ export function ContactForm() {
       [name]: value,
     }));
   };
-
+  useEffect(() => {
+    // Animate form elements on page load
+    gsap.from('.form-element', {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.form-container',
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: 1,
+      },
+    });
+  
+    // Animate form container on scroll
+    gsap.from('.form-container', {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.form-container',
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: 1,
+      },
+    });
+  
+    // Animate form button
+    gsap.from('.form-button', {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.form-container',
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: 1,
+      },
+    });
+  
+    // Entrance animation for the image
+    gsap.from('.form-image', {
+      opacity: 0,
+      x: -50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.form-image',
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: 1,
+      },
+    });
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        trigger.kill(true);
+      });
+    };
+  }, []);
 return (
   <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center pt-32 px-5">
     <div className="flex justify-center p-6">
-      <img src="/images/contact.svg" alt="Image" className="max-h-96" />
+      <img src="/images/contact.svg" alt="Image" className="max-h-96 form-image" />
     </div>
     <div className="max-w-md w-full rounded-lg md:rounded-2xl p-4 md:p-8 shadow-input bg-[#DCFFCD] bg-opacity-20 text-black mx-auto">
       <h2 className="font-bold text-xl text-[#004AAD]">
@@ -76,7 +139,7 @@ return (
         Unleash the power of bespoke solutions for your business growth.
       </p>
 
-      <form className="my-8" onSubmit={handleSubmit}>
+      <form className="my-8 form-container" onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-4">
           <Input id="name" placeholder="Type your name..." type="text"  name="name"  value={formData.name}
               onChange={handleChange}/>
@@ -91,7 +154,7 @@ return (
         </LabelInputContainer>
 
         <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+          className=" form-button bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
           Send &rarr;

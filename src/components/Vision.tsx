@@ -8,14 +8,11 @@ const Vision = () => {
   const listAnimation = useAnimation();
 
   useEffect(() => {
-    const animateOnLoad = async () => {
-      await containerAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      await imageAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      await textAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      await listAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-    };
-
-    setTimeout(animateOnLoad, 800);
+      containerAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
+      imageAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
+      textAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
+      listAnimation.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
+    
   }, [containerAnimation, imageAnimation, textAnimation, listAnimation]);
 
   return (

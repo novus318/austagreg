@@ -1,5 +1,8 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { JoinUs } from '@/components/JoinUs'
 import Layout from '@/components/Layout'
+import ServiSection from '@/components/ServiSection'
 import React from 'react'
 
 const Services = () => {
@@ -14,6 +17,9 @@ const Services = () => {
     canonicalUrl="https://www.austagreg.com/services"
     >
    <Header/>
+   <ServiSection/>
+   <JoinUs/>
+   <Footer/>
    </Layout>
    </>
   )

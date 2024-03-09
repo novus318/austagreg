@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import ScrollToTop from './ScrollUp';
+import ContactIcons from './ContactIcons';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -52,6 +54,8 @@ const Layout: React.FC<LayoutProps> = ({
         <title>{title}</title>
       </Helmet>
       {children}
+      <ScrollToTop/>
+      <ContactIcons/>
     </>
   );
 };

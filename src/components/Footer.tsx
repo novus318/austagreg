@@ -30,7 +30,7 @@ const Footer = () => {
                 <a href="#" className="hover:text-gray-600">
                   <FaInstagram className="text-2xl" />
                 </a>
-                <a href="#" className="hover:text-gray-600">
+                <a href="https://www.linkedin.com/company/austagregsg/" target='_blank' className="hover:text-gray-600">
                   <FaLinkedin className="text-2xl" />
                 </a>
               </div>
@@ -38,10 +38,10 @@ const Footer = () => {
   
             <div className="text-center md:text-left">
               <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-              <p className="text-gray-600 flex items-center mb-4">
+              <a href='mailto:info@austagreg.com' target='_blank' className="text-gray-600 flex items-center mb-4">
                 <FaEnvelope className="text-xl mr-2" />
                 info@austagreg.com
-              </p>
+              </a>
               <Link href="/privacy">
                 <span className="text-gray-600 hover:text-gray-800">Privacy Policy</span>
               </Link>

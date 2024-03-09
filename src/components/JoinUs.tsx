@@ -26,9 +26,11 @@ export function JoinUs() {
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+      <a href="https://wa.me/+6598379110" target="_blank" rel="noopener noreferrer">
         <button className="w-40 h-10 rounded-xl bg-[#7ED957] border text-white text-sm hover:bg-[#6cbf4d]">
         Get Started
         </button>
+        </a>
       </div>
     </div>
   );

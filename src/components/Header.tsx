@@ -46,7 +46,7 @@ import { motion, useAnimation } from 'framer-motion';
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className={`flex mont-heavy items-center justify-between fixed w-full z-20 px-4 py-2 ${
-          scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+          scrolled ? 'bg-white shadow-md' : 'bg-white'
         } `}
       >
     <Link href='/'>
